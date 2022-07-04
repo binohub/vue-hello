@@ -15,8 +15,10 @@
     <div id="app">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center d-flex flex-column align-items-center">
+                    <input class="text-center" type="text" v-model="header" placeholder="dynamic header">
                     <h1>{{ header }}</h1>
+                    <input class="text-center" type="text" v-model="imgSource" placeholder="dynamic images">
                     <img :src="imgSource" alt="...">
                 </div>
             </div>
